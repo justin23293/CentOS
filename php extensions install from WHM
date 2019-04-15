@@ -1,0 +1,14 @@
+/To enable PHP extension, please follow these steps :
+
+
+1) Login to the WHM of the server.
+2) Type ‘easy’ into the search field in the top left of WHM.
+3) Under the Software category, click on EasyApache 4.
+4) In the Currently Installed Packages section, click on the Customize button.
+5) Click on the PHP Extensions option from the left.
+6) In the Search field, type to enter ‘fileinfo’.
+7) Click the toggle button(s) next to the PHP version(s) that you would like the PHP extension installed for.
+8) Click the Review option from the left.
+9) Confirm the options you selected are listed under the “Please review the following list of packages you are about to install by provisioning this profile.” section. Then, click the Provision button.
+10) Once the installation is completed, you will receive a message: “The provision process is complete”. Click the Done button to finish.
+https://www.inmotionhosting.com/support/edu/easyapache/easy-apache-4/how-to-install-a-php-extension-using-easyapache-4
