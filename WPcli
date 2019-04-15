@@ -1,0 +1,34 @@
+/Enable wpcli
+
+
+curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar && chmod +x wp-cli.phar && mv wp-cli.phar /usr/local/bin/wp
+
+
+
+/Wordpress CLI installation :
+
+
+1) Run the following as root
+curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+chmod +x wp-cli.phar
+mv wp-cli.phar /usr/local/bin/wp
+
+
+** These commands should run in respective domain directory where WP is installed **
+To check whether wp-cli installed :  wp –info
+To replace core files/updated WP version :  wp core download –force
+To check config file:  wp config list
+To check site URL :  wp option get siteurl
+To update site URL :  wp option update siteurl http://domain.com/
+To create the admin user :  wp user create username email@example.com –role=administrator
+To disable all plugins :  wp plugin deactivate –all
+To enable all the plugins :  wp plugin activate –all
+To check theme status :  wp theme status
+To install and activate default theme :  wp theme install twentysixteen –activate
+To repair the database :  wp db repair
+To import xml file :  wp import filename.xml –authors=create
+To export the database :  wp db export database.sql
+To import the database:  wp db import database.sql
+To search and replace :  wp search-replace OLD URL NEW URL
+To create admin login user :  wp user create username email@email.com –role=administrator
+For more info : https://developer.wordpress.org/cli/commands/
