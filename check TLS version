@@ -1,0 +1,4 @@
+openssl ciphers -v | awk ‘{print $2}’ | sort | uniq
+
+
+
