@@ -1,0 +1,22 @@
+moodle latest version fixing code
+
+
+
+Add this code to my.cnf
+
+
+
+Then restart mysql
+
+
+
+innodb_file_format = Barracuda
+  innodb_large_prefix
+  character-set-server = utf8mb4
+  collation-server = utf8mb4_unicode_ci
+  skip-character-set-client-handshake
+  mysql
+  default-character-set = utf8mb4
+moodle latest version fixing code Add this code to my.cnf
+Then restart mysql
+https://docs.moodle.org/35/en/MySQL_full_unicode_support
