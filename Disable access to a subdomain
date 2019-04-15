@@ -1,0 +1,14 @@
+The following is an example ‘.htaccess’ code which provides a thorough means of making the Addon domain folders, and their contents, invisible through the main domain by forcing a “404 Not Found” error. This will work both for web browsers and search engines:
+  RewriteEngine On
+          RewriteCond %{HTTP_HOST} ^(www.)?domain.com$ NC
+          RewriteCond %{REQUEST_URI} ^/addonfolder/(.*)$
+          RewriteRule ^(.*)$ – R=404
+The example rewrite rules will force ‘http://www.domain.com/addonfolder/’ and any of its contents to report the “404 Not Found” error.
+Be sure to replace the ‘domain.com’ in the example with your hosting account’s main domain address and ‘addonfolder’ with the name of the folder for your Addon domain.
+This can also be applied to multiple Addon domain folders through the use of the OR option as in the following example in which 3 Addon folders are being reported as “404 Not Found” when accessed through the main domain:
+  RewriteEngine On
+          RewriteCond %{HTTP_HOST} ^(www.)?domain.com$ NC
+          RewriteCond %{REQUEST_URI} ^/addon1/(.*)$ OR
+          RewriteCond %{REQUEST_URI} ^/addon2/(.*)$ OR
+          RewriteCond %{REQUEST_URI} ^/addon3/(.*)$
+          RewriteRule ^(.*)$ – L
