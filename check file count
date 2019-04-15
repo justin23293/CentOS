@@ -1,0 +1,1 @@
+for i in /home/USERNAME/*; do echo $i; find $i |wc -l | sort ; done
