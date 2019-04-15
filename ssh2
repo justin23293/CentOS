@@ -1,0 +1,4 @@
+command to check : php -m | grep ssh2
+http://programster.blogspot.com/2013/06/centos-64-install-ssh2-extension-for-php.html
+
+
