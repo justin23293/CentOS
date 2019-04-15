@@ -1,0 +1,15 @@
+If you see database tables crashed, log into the server via root and run the following commands:
+mysqlcheck -A –auto-repair –force &amp; ;
+mysqlcheck -A -o &amp;;
+This will try to repair all tables of all databases and optimize them.
+
+
+mysqlcheck -A –auto-repair –force;
+  mysqlcheck -A -o
+mysqlcheck -c databasename table
+mysqlcheck -r databasename table
+mysqlcheck -o databasename table
+
+
+/Innodb repair or optimize:
+add this code in the my.cnf file: innodb_force_recovery=1
