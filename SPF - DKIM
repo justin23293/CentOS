@@ -1,0 +1,25 @@
+ DKIM
+http://dkimcore.org/tools/keys.html
+
+SPF
+https://mxtoolbox.com/SPFRecordGenerator.aspx
+https://www.dynu.com/NetworkTools/SPFGenerator
+https://www.royhochstenbach.com/projects/spfgenerator/
+
+/dkim
+/var/cpanel/domain_keys/pubic/<Domainname>
+/var/cpanel/domain_keys/private/<Domainname>
+
+dkim generate
+To generate the dkim record, log in to SSH as root and run this script: 
+read -p “Enter the domain name: ” DIN && DOMAIN=”${DIN:?Need to set DOMAIN}” && openssl genrsa -out /var/cpanel/domain_keys/private/${DOMAIN} 1024 && openssl rsa -in /var/cpanel/domain_keys/private/${DOMAIN} -pubout -out /var/cpanel/domain_keys/public/${DOMAIN}&& echo “Add the following DKIM txt record: ” && echo “default._domainkey IN TXT \”v=DKIM1; k=rsa; p=”$(awk ‘$0 !~ / KEY/{printf $0 }’ /var/cpanel/domain_keys/public/${DOMAIN} )\”
+Then press enter. It will ask for a domain name. Type in the domain name and press enter. It will generate the dkim record. 
+Then log in to WHM -> Edit DNS zone. Select the domain name. Press Edit. 
+Then in the bottom, you can see: Add New Entries Below this Line
+There, in the first box, type in: default._domainkey
+In the second, it will show 14400. Keep it as it is. 
+In the third, from the drop down option, select: txt
+n the last box, type in the DKIM record which starts from: “v=DKIM1; k=rsa; ….
+Then once the record is typed in , press enter. 
+This will add the DKIM record.
+
