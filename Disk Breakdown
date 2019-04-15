@@ -1,0 +1,7 @@
+du -hx --max-depth 1 | sort -hr  
+
+/exclude virtfs and check breakdown
+du -hx –max-depth 1 –exclude=virtfs | sort -hr
+
+
+
