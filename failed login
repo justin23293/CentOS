@@ -1,0 +1,3 @@
+/To check failed login attempts:
+
+# grep “Failed password” /var/log/auth.log
