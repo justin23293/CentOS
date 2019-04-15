@@ -1,0 +1,21 @@
+file permissions – read(4), write(2), execute(1)… default- folder-755,file-644
+
+
+
+to edit file permission – cPanel->filemanager, ftp clients, chmod in SSH
+
+
+
+chown -R user_name : folder_name.
+
+
+
+chown username: file name
+
+
+
+/Force permission
+
+find2perl ~/public_html -type f -print -exec chmod 644 {} \; | perl;
+
+find2perl ~/public_html -type d -print -exec chmod 755 {} \; | perl;
