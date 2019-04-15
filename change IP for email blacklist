@@ -1,0 +1,5 @@
+You need to set the “Send mail from account’s dedicated IP address” to ON. in WHM -> Exim Configuration Manager.
+
+
+
+Then change the IP of the account from WHM -> List accounts -> “Change IP”
