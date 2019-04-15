@@ -1,0 +1,33 @@
+Try the Site Manager (https://wiki.filezilla-project.org/Site_Manager). You will use the same FTP login information, but you need to change the Encryption to “Use Plain FTP”.
+
+
+
+1) Open FileZilla
+
+
+
+2) At the top left of FileZilla, select File > Site Manager
+
+
+
+3) Within the site manager, enter in the following:
+
+
+
+Host:  Your account IP address or ftp.yourdomainname.com
+
+
+
+User: cpanel username or ftp username
+
+
+
+Pass: cpanel or ftp password
+
+
+
+4) There is a dropdown labeled “Encryption”. Select Only Use Plain FTP (insecure).
+
+
+
+5) Press Connect
