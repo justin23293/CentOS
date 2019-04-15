@@ -1,0 +1,8 @@
+/To know about a process
+strace -p 6112
+grep TracerPid /proc/6112/status
+
+/running processes : ps -aux | grep php
+
+/Missing space in disk – check the processes:
+https://www.tecmint.c om/10-lsof-command-examples-in-linux/
