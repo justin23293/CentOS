@@ -1,0 +1,30 @@
+https://forums.cpanel.net/threads/vps-down-what-logs-file-need-to-be-checked.286351/
+You can see the IPs of the last logins from File manager -> home directory -> .lastlogin file.
+There are two main locations where logs are kept on Dedicated and VPS servers. The /usr/local/cpanel/logs directory and the /var/log/ directory.
+
+
+Here is a list of the logs common to each directory.
+/usr/local/cpanel/logs
+access_log: cPanel access log for both cPanel and WHM
+error_log: cPanel error log
+license_log: cPanel license log
+login_log: cPanel user login log
+/usr/local/cpanel/logs
+access_log: cPanel access log for both cPanel and WHM
+error_log: cPanel error log
+license_log: cPanel license log
+login_log: cPanel user login log
+melange.log: cPanel chat server log
+melange_msg.log: cPanel chat server message log
+stats_log: cPanel web stats log
+/var/log/
+messages: Contains global system messages like mail, cron, daemon, kern, auth, etc.
+bandwidth: cPanel total bandwidth logs for the entire server
+chkservd.log: chkservd service log
+clamav: clamav log directory
+cpupdate.log: cPanel update log
+exim_mainlog: Exim email transaction log
+exim_paniclog: Exim error log
+exim_rejectlog: Exim rejected email log
+maillog: Transaction and login log for all mail services
+pgsql: PostgreSQL log file
