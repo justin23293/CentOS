@@ -1,0 +1,20 @@
+Horde
+To change the time zone in Horde, follow these steps:
+Log in to Horde.
+In the left-hand pane, click Options, and then click Global Options.
+Under Your Information, click Locale and Time.
+Select your time zone, and then click Save Options.
+
+Roundcube
+To change the time zone in Roundcube, follow these steps:
+Log in to Roundcube.
+Click Settings.
+Click User Interface.
+Select your time zone, and then click Save.
+
+SquirrelMail
+To change the time zone in SquirrelMail, follow these steps:
+Log in to SquirrelMail.
+Click Options.
+Click Personal Information.
+Under Timezone Options, select your time zone, and then click Submit
