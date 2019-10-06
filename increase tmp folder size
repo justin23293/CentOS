@@ -1,0 +1,15 @@
+https://serverfault.com/questions/730970/increasing-the-size-of-my-tmp-folder
+Run the following commands:
+
+dd if=/dev/zero of=/usr/tmp-dir bs=1024M count=2
+mke2fs -j /usr/tmp-dir
+mount -t ext3 -o loop /usr/tmp-dir /tmp
+added the line to my /etc/fstab file
+
+/usr/tmp-dir /tmp ext3 defaults,loop 0 0
+then
+
+chmod 1777 /tmp
+chown root.root /tmp
+
+or in /etc/fstab you should see a line for tmpfs with a size= parameter. Change the number after the = to a suitable size
