@@ -1,5 +1,10 @@
 http://blog.thcservers.com/whm-how-to-change-or-limit-email-attachment-size/
 
-
-
+Login to WHM as root
+Under Service Configuration, Click “exim Configuration Manager”
+Click “Advanced Editor”
+Scroll down and Click “Add additional Configuration Setting”
+Find “message_size_limit” in pull-down list and choose
+Enter limit that you want to change to
+Scroll to bottom and click “save”
 
