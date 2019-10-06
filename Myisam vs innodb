@@ -1,0 +1,4 @@
+Performance speed of MyISAM table is much higher as compared with tables in InnoDB.
+MyISAM does not support transactions by tables while InnoDB supports.
+MyISAM has table-level locking. innodb supports row-level locking.
+InnoDB is better option while you are dealing with larger database MyISAM is suitable for small project.
