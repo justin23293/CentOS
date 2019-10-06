@@ -1,0 +1,6 @@
+grep -i -r 'out of memory' /var/log/
+free -h
+Top
+Find pid using command- ps aux | grep <process name>
+kill process if safe
+or rename the file causing the load and optimize.
