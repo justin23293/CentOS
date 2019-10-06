@@ -1,3 +1,13 @@
 /There is a setting that determines how long those frozen messages are kept until they are deleted
 
 exim -bP | grep frozen
+
+
+To print a list of the messages in the queue, enter:
+# exim -bp
+
+To remove a message from the queue, enter:
+# exim -Mrm {message-id}
+
+To remove all messages from the queue, enter:
+# exim -bp | awk '/^ *[0-9]+[mhd]/{print "exim -Mrm " $3}' | bash
