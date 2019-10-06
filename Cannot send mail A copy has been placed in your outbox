@@ -1,6 +1,27 @@
 /iphone email error
 
-
 http://www.iphonetopics.com/cannot-send-mail-it-does-not-allow-relaying/
 
+Fix 1:-
 
+
+ 
+Go to Settings -> Mail, Contacts, Calendars. Click the email account (which you trying to send mail).
+
+Select ACCOUNT
+
+Scroll down and choose Out Going Mail Server.
+
+Select the Primary server at the top.
+
+Make sure you enter all information needed (most of the people forgot to enter username and password).
+
+SEE ALSO : How to Fix “Server does not allow relaying” email error (detailed guide to fix this issue).
+
+Fix 2:-
+
+Go to “Outgoing Mail Server”. Click on SMTP. Make sure both “Primary server” and “Other SMTP servers” are set for ON.
+
+Fix 3:-
+
+This issue mostly happened after configuring mail server.  This issue might happened because of DNS error or domain-mismatch virtual-hosting configuration error.
