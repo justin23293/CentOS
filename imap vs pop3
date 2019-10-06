@@ -1,0 +1,3 @@
+IMAP is short for Internet Message Access Protocol
+POP3 is short for Post Office Protocol
+With IMAP, the message does not remain on the local device, such as a computer, it remains on the server. With POP3 mail, it will connect and attempt to keep the mail located on the local device (computer or mobile).
