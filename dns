@@ -1,0 +1,14 @@
+DNS records: 
+
+SOA: start of authority (SOA) record is information stored in a domain name system (DNS) zone about that zone and about other DNS records. 
+The SOA record stores information about the name of the server that supplied the data for the zone; the administrator of the zone; the current version of the data file; the number of seconds a secondary name server should wait before checking for updates; the number of seconds a secondary name server should wait before retrying a failed zone transfer; the maximum number of seconds that a secondary name server can use data before it must either be refreshed or expire; and a default number of seconds for the time-to-live file on resource records.
+
+A - specifies IP addresses corresponding to your domain and its subdomains;
+
+MX - specifies where the emails for your domain should be delivered;
+
+CNAME - specifies redirects from your domain's subdomains to other domains / subdomains;
+
+TXT - these records are used to store text-based information related to your domain. One of their most common uses is for SPF data. SPF, or Sender Policy Framework, is an attempt to control forged e-mail.
+
+NS: NS stands for ‘name server’ and this record indicates which DNS server is authoritative for that domain (which server contains the actual DNS records). A domain will often have multiple NS records which can indicate primary and backup name servers for that domain.
